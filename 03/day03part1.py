@@ -5,5 +5,4 @@ def possible_triangles(input_string):
         sides = [int(side) for side in triangle.split()]
         if sides[0] + sides[1] > sides[2] and sides[0] + sides[2] > sides[1] and sides[1] + sides[2] > sides[0]:
             possible_triangles_sum += 1
-    print(possible_triangles_sum)
     return possible_triangles_sum
